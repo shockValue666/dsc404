@@ -25,3 +25,68 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+/* @keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+} */
+/* @keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(calc(100% - 100px)); 
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(calc(-100% + 100px)); 
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animation-class {
+  animation: slide 5s infinite;
+} */
+
+
+@keyframes slide {
+  0%, 100% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% - 150px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animation-class {
+  position: absolute;
+  animation: slide 5s infinite, rotate 5s linear infinite;
+}
