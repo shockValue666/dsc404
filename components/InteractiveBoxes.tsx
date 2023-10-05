@@ -1,6 +1,7 @@
 "use client";
 // components/InteractiveBoxes.tsx
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const BoxContent = [
   { id: 1, initial: "how many?",content: '4.4K' },
@@ -17,9 +18,14 @@ const InteractiveBoxes: React.FC = () => {
   };
 
   return (
-    <div className="relative h-[calc(100vh-64px)] px-[5%] bg-[#FFCF96]">
-      <div className="h-1/6 flex items-center justify-start p-5">
+    <div className="relative h-[calc(100vh-64px)] px-[5%] bg-[#7858A6]">
+      <div className="h-1/6 flex items-center justify-between p-5 space-x-4"> {/* Added space-x-4 for spacing */}
         <h2 className="text-white text-[40px]">Minting</h2>
+        <div className=''>
+          <div className='animation-rot'>
+            <Image src='/images/head_red.png' width={500} height={500} alt="Description of Image" className="w-[250px] h-[250px] transform rotate-12"/>
+          </div>
+        </div>
       </div>
 
       <div className="h-5/6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 p-4 ">
@@ -30,12 +36,12 @@ const InteractiveBoxes: React.FC = () => {
             key={box.id}
           >
             <div
-              className="bg-[#CDFAD5] rounded-xl transition-all duration-300 absolute inset-0 flex items-center justify-center"
+              className="bg-[#B931FC] rounded-xl transition-all duration-300 absolute inset-0 flex items-center justify-center"
             >
-              <div className={`p-4 text-[30px] text-center text-[#FF8080] font-bold ${activeBox === box.id ? 'hidden' : 'block'}`}>
+              <div className={`p-4 text-[30px] text-center text-white font-bold ${activeBox === box.id ? 'hidden' : 'block'}`}>
                 {box.initial}
               </div>
-              <div className={`p-4 text-center text-[30px] text-[#FF8080]  ${activeBox === box.id ? 'block' : 'hidden'}`}>
+              <div className={`p-4 text-center text-[30px] text-white  ${activeBox === box.id ? 'block' : 'hidden'}`}>
                 {box.content}
               </div>
             </div>

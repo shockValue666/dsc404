@@ -4,6 +4,7 @@ import CenteredParagraph from '@/components/CenteredParagraph'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import InteractiveBoxes from '@/components/InteractiveBoxes'
+import Logo from '@/components/Logo'
 import SecondBanner from '@/components/SecondBanner'
 import Separator from '@/components/Separator'
 import Title from '@/components/Title'
@@ -17,7 +18,7 @@ export default function Home() {
     //   background: 'radial-gradient(circle, hsla(240, 3%, 23%, 1) 22%, hsla(329, 32%, 24%, 1) 61%)',
     //   filter: 'progid: DXImageTransform.Microsoft.gradient( startColorstr="#3A3A3D", endColorstr="#512A3E", GradientType=1 )'
     // }} 
-    className="text-white bg-[#FF8080]">
+    className="text-white bg-[#371B58]">
       <Header/>
       <Title/>
       <Banner/>
@@ -25,6 +26,8 @@ export default function Home() {
       <CenteredParagraph content='SolRaccs is a free Solana project inspired by the Hurdles of a Racoon and the love for Trash. This Mfers are bandits who just love your trash!'/>
       <Separator size="xl"/>
       <InteractiveBoxes/>
+      {/* <Separator size="sm"/> */}
+      <Logo/>
       <Separator size="sm"/>
       <BouncingPhoto/>
       <Separator size="md"/>

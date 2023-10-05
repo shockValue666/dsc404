@@ -12,7 +12,7 @@ const BouncingPhoto: React.FC = () => {
         </div>
         
         <div className="h-4/6 flex items-center justify-center">
-            <div className="relative w-[80%] h-[60%] border-dashed border-2 border-[#F6FDC3]">
+            <div className="relative w-[80%] h-[60%] border-dashed border-2 border-[#B931FC]">
                 <Image width={150} height={150} src="/images/nft.jpeg" alt="Animated photo" className="animation-class pt-[50px] pb-[50px]" />
                 <p className="absolute bottom-0 right-0 text-white pr-[10px]">jk bandits have fun 🤪</p>
             </div>

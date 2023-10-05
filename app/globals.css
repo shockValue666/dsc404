@@ -86,7 +86,26 @@ body {
   }
 }
 
+
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+.animation-up-down {
+  animation: upDown 3s infinite;
+}
+
 .animation-class {
   position: absolute;
   animation: slide 5s infinite, rotate 5s linear infinite;
+}
+
+.animation-rot{
+  animation: rotate 5s linear infinite;
 }
