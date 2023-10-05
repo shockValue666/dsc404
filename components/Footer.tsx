@@ -8,7 +8,7 @@ const Footer = () => {
       </div>
       <div className="h-24 flex items-center justify-center space-x-4">
           <button className="bg-violet-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-200">
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/SolRaccs" target="_blank" rel="noopener noreferrer">
                   Twitter
               </a>
           </button>

@@ -4,6 +4,7 @@ import CenteredParagraph from '@/components/CenteredParagraph'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import InteractiveBoxes from '@/components/InteractiveBoxes'
+import SecondBanner from '@/components/SecondBanner'
 import Separator from '@/components/Separator'
 import Title from '@/components/Title'
 import Whitelist from '@/components/Whitelist'
@@ -26,6 +27,8 @@ export default function Home() {
       <BouncingPhoto/>
       <Separator size="md"/>
       <Whitelist/>
+      <Separator size='sm'/>
+      <SecondBanner/>
       <Separator size="lg"/>
       <Footer/>
     </div>

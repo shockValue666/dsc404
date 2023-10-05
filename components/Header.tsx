@@ -3,12 +3,12 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <div className="flex items-center justify-center h-16 bg-[#3A3A3D] shadow-md">
+    <div className="flex items-center justify-center h-16 shadow-md">
       <a 
-        href="https://twitter.com/yourhandle" 
+        href="https://twitter.com/SolRaccs" 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="bg-gray-700 text-white px-6 py-3 m-2 rounded-md hover:bg-gray-600 transition duration-300"
+        className="bg-purple-700 text-white px-6 py-3 m-2 rounded-md hover:bg-gray-600 transition duration-300"
       >
         Twitter
       </a>
@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         href="https://discord.gg/yourlink" 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="bg-gray-700 text-white px-6 py-3 m-2 rounded-md hover:bg-gray-600 transition duration-300"
+        className="bg-purple-700 text-white px-6 py-3 m-2 rounded-md hover:bg-gray-600 transition duration-300"
       >
         Discord
       </a>
