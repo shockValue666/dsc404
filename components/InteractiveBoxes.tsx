@@ -17,7 +17,7 @@ const InteractiveBoxes: React.FC = () => {
   };
 
   return (
-    <div className="relative h-[calc(100vh-64px)] px-[5%]">
+    <div className="relative h-[calc(100vh-64px)] px-[5%] bg-[#FFCF96]">
       <div className="h-1/6 flex items-center justify-start p-5">
         <h2 className="text-white text-[40px]">Minting</h2>
       </div>
@@ -30,12 +30,12 @@ const InteractiveBoxes: React.FC = () => {
             key={box.id}
           >
             <div
-              className="bg-purple-600 rounded-xl transition-all duration-300 absolute inset-0 flex items-center justify-center"
+              className="bg-[#CDFAD5] rounded-xl transition-all duration-300 absolute inset-0 flex items-center justify-center"
             >
-              <div className={`p-4 text-[30px] text-center font-bold ${activeBox === box.id ? 'hidden' : 'block'}`}>
+              <div className={`p-4 text-[30px] text-center text-[#FF8080] font-bold ${activeBox === box.id ? 'hidden' : 'block'}`}>
                 {box.initial}
               </div>
-              <div className={`p-4 text-center text-[30px]  ${activeBox === box.id ? 'block' : 'hidden'}`}>
+              <div className={`p-4 text-center text-[30px] text-[#FF8080]  ${activeBox === box.id ? 'block' : 'hidden'}`}>
                 {box.content}
               </div>
             </div>
