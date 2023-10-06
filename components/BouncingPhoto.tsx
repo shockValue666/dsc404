@@ -13,7 +13,7 @@ const BouncingPhoto: React.FC = () => {
         <div className="h-5/6 flex items-center justify-center -mt-[6%]">
             <div className="relative w-[80%] h-[60%] border-dashed border-2 border-[#B931FC] overflow-hidden">
                 {/* <Image width={150} height={150} src="/images/nft_1.png" alt="Animated photo" className="animation-class pb-[5%] pt-[15%]" /> */}
-                <Image width={150} height={150} src="/images/nft_1.png" alt="Animated photo" className="animation-class pb-[25%]" />
+                <Image width={150} height={150} src="/images/nft_1.png" alt="Animated photo" className="animation-class pb-[15%]" />
                 {/* <Image width={150} height={150} src="/images/nft_2.png" alt="Animated photo" className="slide-animation pb-[15%] pt-[5%] right-0" /> */}
                 <p className="absolute bottom-0 right-0 text-white pr-[10px]">jk bandits have fun 🤪</p>
             </div>
