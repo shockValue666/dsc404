@@ -23,7 +23,8 @@ const InteractiveBoxes: React.FC = () => {
         <h2 className="text-white text-[40px]">Minting</h2>
         <div className=''>
           <div className='animation-rot'>
-            <Image src='/images/head_red.png' width={200} height={200} alt="Description of Image" className=" transform rotate-12"/>
+
+            <Image src='/images/logo_2.png' width={200} height={200} alt="Description of Image" className=" transform rotate-12"/>
           </div>
         </div>
       </div>
