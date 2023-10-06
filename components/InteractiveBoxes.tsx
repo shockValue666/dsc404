@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 const BoxContent = [
-  { id: 1, initial: "how many?",content: '4.4K' },
-  { id: 2, initial: "how much?", content: '0 $SOL' },
-  { id: 3, initial: "wen?", content: 'we catch the bandits first' },
-  { id: 4, initial: "where?", content: 'wen we find a suitable prison' },
+  { id: 1, initial: "how many?",content: '4.4K',src:"/images/supply.jpeg" },
+  { id: 2, initial: "how much?", content: '0 $SOL',src:"/images/price.jpeg" },
+  { id: 3, initial: "wen?", content: 'we catch the bandits first',src:"/images/3.jpeg" },
+  { id: 4, initial: "where?", content: 'wen we find a suitable prison',src:"/images/4.jpeg" },
 ];
 
 const InteractiveBoxes: React.FC = () => {
@@ -29,22 +29,31 @@ const InteractiveBoxes: React.FC = () => {
         </div>
       </div>
 
-      <div className="h-4/6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 p-4 ">
+      <div className="h-4/6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 w-[100%] p-4 ">
       {BoxContent.map((box) => (
           <div 
-            className="w-full relative pb-full" // Added padding-bottom to enforce square shape
+            className="w-full relative" // Added padding-bottom to enforce square shape
             onClick={() => handleBoxClick(box.id)}
             key={box.id}
           >
             <div
               className="bg-[#B931FC] rounded-xl transition-all duration-300 absolute inset-0 flex items-center justify-center"
             >
-              <div className={`p-4 text-[30px] text-center text-white font-bold ${activeBox === box.id ? 'hidden' : 'block'}`}>
+              <div className={` p-4 text-[30px] text-center text-white font-bold ${activeBox === box.id ? 'hidden' : 'block'}`}>
                 {box.initial}
               </div>
-              <div className={`p-4 text-center text-[30px] text-white  ${activeBox === box.id ? 'block' : 'hidden'}`}>
-                {box.content}
-              </div>
+              {
+                box.src!=="" ? (
+                  <div className={` p-4 text-center text-[30px] text-white  ${activeBox === box.id ? 'block' : 'hidden'}`}>
+                    <Image src={box.src} alt='Image Description' layout="fill" className={` object-cover scaled-image ${box.id === 2 ? 'push-right' : ''}`}/>
+                  </div>
+                ):
+                (
+                  <div className={` p-4 text-center text-[30px] text-white  ${activeBox === box.id ? 'block' : 'hidden'}`}>
+                    {box.content}
+                  </div>
+                )
+              }
             </div>
           </div>
         ))}
