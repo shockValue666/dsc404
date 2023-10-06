@@ -19,16 +19,16 @@ const InteractiveBoxes: React.FC = () => {
 
   return (
     <div className="relative h-[calc(100vh-64px)] px-[5%] bg-[#7858A6]">
-      <div className="h-1/6 flex items-center justify-between p-5 space-x-4"> {/* Added space-x-4 for spacing */}
+      <div className="h-2/6 flex items-center justify-between p-5 space-x-4"> {/* Added space-x-4 for spacing */}
         <h2 className="text-white text-[40px]">Minting</h2>
         <div className=''>
           <div className='animation-rot'>
-            <Image src='/images/head_red.png' width={500} height={500} alt="Description of Image" className="w-[250px] h-[250px] transform rotate-12"/>
+            <Image src='/images/head_red.png' width={200} height={200} alt="Description of Image" className=" transform rotate-12"/>
           </div>
         </div>
       </div>
 
-      <div className="h-5/6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 p-4 ">
+      <div className="h-4/6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 p-4 ">
       {BoxContent.map((box) => (
           <div 
             className="w-full relative pb-full" // Added padding-bottom to enforce square shape

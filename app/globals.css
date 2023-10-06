@@ -77,6 +77,15 @@ body {
   }
 }
 
+@keyframes slideToRight {
+  0%, 100% {
+    left: calc(100% - 150px);  /* Start and end at the right */
+  }
+  50% {
+    left: 0%;  /* Move to the left at the midpoint */
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -108,4 +117,9 @@ body {
 
 .animation-rot{
   animation: rotate 5s linear infinite;
+}
+
+.slide-animation {
+  animation: slideToRight 5s infinite,rotate 5s linear infinite; /* You can adjust the 5s to your desired duration */
+  position: absolute;
 }

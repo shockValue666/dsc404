@@ -1,10 +1,11 @@
 // components/Title.tsx
 import React from 'react';
+import Image from 'next/image'
 
 const Title: React.FC = () => {
     return (
-        <div className="text-center my-10">
-        <h1 className="text-5xl font-extrablod text-white"><p className='font-extrablod'>SolRaccs</p></h1>
+        <div className="flex justify-center items-center my-0">
+            <Image src={'/images/text_white.png'} width={300} height={300} alt="Logo" />
         </div>
     );
 };
