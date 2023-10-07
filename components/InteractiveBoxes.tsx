@@ -78,7 +78,7 @@ const InteractiveBox:React.FC<InteractiveBoxProps> = ({ box, isActive, onClick }
       { isActive ? (
         box.src ? (
           // <Image src={box.src} alt='Box Image' layout="fill" className={box.id === 2 ? 'object-right' : 'object-cover'} />
-          <Image src={box.src} alt='Box Image' layout="fill" className={'object-right'} />
+          <Image src={box.src} alt='Box Image' layout="fill" className={'object-right rounded-xl'} />
         ) : (
           <p className="text-[30px] text-center text-white">{box.content}</p>
         )
