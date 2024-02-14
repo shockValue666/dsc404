@@ -13,27 +13,19 @@ import Whitelist from '@/components/Whitelist'
 export default function Home() {
   return (
     <div 
-    // style={{
-    //   minHeight: '100vh',
-    //   background: 'radial-gradient(circle, hsla(240, 3%, 23%, 1) 22%, hsla(329, 32%, 24%, 1) 61%)',
-    //   filter: 'progid: DXImageTransform.Microsoft.gradient( startColorstr="#3A3A3D", endColorstr="#512A3E", GradientType=1 )'
-    // }} 
-    className="text-white bg-[#371B58]">
+    className="text-white bg-[#000000]">
       <Header/>
       <Title/>
       <Banner/>
       <Separator size="xl"/>
-      <CenteredParagraph content='SolRaccs is a free Solana project inspired by the Hurdles of a Racoon and the love for Trash. This Mfers are bandits who just love your trash!'/>
+      <CenteredParagraph content='Descientists404 is a group of unconventional scientists engage in groundbreaking experiments that defy traditional ethics. Utilizing the ERC404 standard, which combines the best of both fungible and non-fungible tokens, this project allows participants to explore and invest in the outcomes of experiments once thought too risky or taboo. Each token represents a unique piece of their audacious scientific journey, offering a glimpse into a world where the limits of science are constantly being challenged and redefined.'/>
       <Separator size="xl"/>
       <InteractiveBoxes/>
-      {/* <Separator size="sm"/> */}
       <Logo/>
       <Separator size="sm"/>
       <BouncingPhoto/>
       <Separator size="md"/>
-      <Whitelist/>
-      {/* <Separator size='sm'/> */}
-      {/* <SecondBanner/> */}
+      {/* <Whitelist/> */}
       <Separator size="lg"/>
       <Footer/>
     </div>

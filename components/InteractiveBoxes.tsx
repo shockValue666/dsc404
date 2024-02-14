@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 const BoxContent = [
-  { id: 1, initial: "how many?",content: '4.4K',src:"/images/supply.jpeg" },
-  { id: 2, initial: "how much?", content: '0 $SOL',src:"/images/price.jpeg" },
-  { id: 3, initial: "wen?", content: 'we catch the bandits first',src:"/images/3.jpeg" },
-  { id: 4, initial: "where?", content: 'wen we find a suitable prison',src:"/images/4.jpeg" },
+  { id: 1, initial: "how many?",content: '4040' },
+  { id: 2, initial: "how much?", content: '0.00404 $ETH' },
+  { id: 3, initial: "wen?", content: 'sooner than you think...' },
+  { id: 4, initial: "where?", content: 'Ethereum' },
 ];
 
 // const InteractiveBoxes: React.FC = () => {
@@ -74,16 +74,16 @@ const InteractiveBox:React.FC<InteractiveBoxProps> = ({ box, isActive, onClick }
     className="relative w-full pb-1/2 cursor-pointer" // width is 100% of its container, padding-bottom is 50% to enforce square
     onClick={onClick}
   >
-    <div className="bg-[#B931FC] rounded-xl transition-all duration-300 flex items-center justify-center absolute top-0 left-0 right-0 bottom-0">
+    <div className="bg-white rounded-xl transition-all duration-300 flex items-center justify-center absolute top-0 left-0 right-0 bottom-0">
       { isActive ? (
         box.src ? (
           // <Image src={box.src} alt='Box Image' layout="fill" className={box.id === 2 ? 'object-right' : 'object-cover'} />
           <Image src={box.src} alt='Box Image' layout="fill" className={'object-right rounded-xl'} />
         ) : (
-          <p className="text-[30px] text-center text-white">{box.content}</p>
+          <p className="text-[30px] text-center text-black">{box.content}</p>
         )
       ) : (
-        <p className="text-[30px] text-center text-white font-bold">{box.initial}</p>
+        <p className="text-[30px] text-center text-black font-bold">{box.initial}</p>
       )}
     </div>
   </div>
@@ -93,11 +93,12 @@ const InteractiveBoxes: React.FC = () => {
   const [activeBox, setActiveBox] = useState<number | null>(null);
 
   return (
-    <div className="relative h-[calc(100vh-64px)] px-[5%] bg-[#7858A6]">
+    <div className="relative h-[calc(100vh-64px)] px-[5%] bg-gradient-to-b from-[#000000] to-transparent border-t-2 border-gray-50">
       <div className="h-1/3 flex items-center justify-between p-5 space-x-4">
         <h2 className="text-white text-[40px]">Minting</h2>
-        <div className='animation-rot'>
-          <Image src='/images/logo_2.png' width={200} height={200} alt="Logo" className="transform rotate-12"/>
+        {/* <div className='animation-rot'> */}
+        <div>
+          <Image src='/logoz/output-onlinepngtools.png' width={200} height={200} alt="Logo" className="transform rotate-12"/>
         </div>
       </div>
 

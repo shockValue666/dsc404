@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Banner: React.FC = () => {
   return (
     <div className="flex justify-center">
-      <Image src="/images/leader_board.png" width={900} height={300} alt="Raccoon NFT Banner" className="rounded-md shadow-lg" />
+      <Image src="/illustrations/Operation.png" width={800} height={300} alt="Raccoon NFT Banner" className="rounded-md shadow-lg" />
     </div>
   );
 };
